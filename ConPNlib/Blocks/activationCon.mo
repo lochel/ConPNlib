@@ -10,7 +10,7 @@ block activationCon "activation process of continuous transitions"
   input Real maxTokens[:] "maximum capacities of output places";
   input Boolean fed[:] "input places are fed?";
   input Boolean emptied[:] "output places are emptied?";
-  input PNlib.Types.ArcType arcType[:] "arc type of input places";
+  input ConPNlib.Types.ArcType arcType[:] "arc type of input places";
   input Real testValue[:] "test values of test and inhibitor arcs";
   output Boolean active "activation of transition";
   output Boolean weaklyInputActiveVec[nIn]
@@ -25,7 +25,7 @@ algorithm
   //check input places
   for i in 1:nIn loop
     // normal arc
-    if arcType[i] == PNlib.Types.ArcType.normal_arc then
+    if arcType[i] == ConPNlib.Types.ArcType.normal_arc then
       if tIn[i] <= minTokens[i] then
          if fed[i] then
            weaklyInputActiveVec[i] := true;
@@ -34,7 +34,7 @@ algorithm
          end if;
       end if;
     // inhibitor arc
-    elseif arcType[i] == PNlib.Types.ArcType.inhibitor_arc then
+    elseif arcType[i] == ConPNlib.Types.ArcType.inhibitor_arc then
       if not tIn[i] < testValue[i] then
         active := false;
       end if;

@@ -1,21 +1,21 @@
 within ConPNlib.Examples;
 model Test11
-  PNlib.PC 'P1'(nOut=1, startMarks=1.5) annotation (Placement(visible=true,
+  ConPNlib.PC 'P1'(nOut=1, startMarks=1.5) annotation (Placement(visible=true,
         transformation(
         origin={-60,0},
         extent={{-10,-10},{10,10}},
         rotation=0)));
-  PNlib.TC 'T1'(nOut=1, nIn=1) annotation (Placement(visible=true,
+  ConPNlib.TC 'T1'(nOut=1, nIn=1) annotation (Placement(visible=true,
         transformation(
         origin={-30,0},
         extent={{-10,-10},{10,10}},
         rotation=0)));
-  PNlib.PC 'P2'(nOut=1, nIn=1) annotation (Placement(visible=true,
+  ConPNlib.PC 'P2'(nOut=1, nIn=1) annotation (Placement(visible=true,
         transformation(
         origin={0,0},
         extent={{-10,-10},{10,10}},
         rotation=0)));
-  PNlib.TC 'T2'(
+  ConPNlib.TC 'T2'(
     nIn=1,
     nOut=1,
     maximumSpeed=0.5 + time) annotation (Placement(visible=true,

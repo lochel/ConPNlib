@@ -7,7 +7,7 @@ connector PlaceOut
     "Which of the output transitions are enabled by the place?"                     annotation(HideResult = true);
   output Real decreasingFactor
     "Factor for decreasing the speed of continuous input transitions"                            annotation(HideResult = true);
-  output PNlib.Types.ArcType arcType
+  output ConPNlib.Types.ArcType arcType
     "Type of output arcs ([1]normal, [2]test, [3]inhibition, or [4]read)"                                  annotation(HideResult = true);
   output Real testValue "Test value of a test or inhibitor arc" annotation(HideResult = true);
   output Boolean fed "Is the continuous place fed by input transitions?" annotation(HideResult = true);

@@ -1,12 +1,12 @@
 within ConPNlib.Examples;
 model Test10
-  PNlib.PC P1(nOut = 1, startMarks = 1) annotation(Placement(visible = true, transformation(origin = {-60, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.PC P2(nOut = 2, startMarks = 1.5) annotation(Placement(visible = true, transformation(origin = {-60, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.IA IA1(testValue = 0) annotation(Placement(transformation(extent = {{-8, -2}, {8, 2}}, rotation = 90, origin = {-30, 0})));
-  PNlib.TC T1(nIn = 2, nOut = 1) annotation(Placement(visible = true, transformation(origin = {0, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.TC T2(nIn = 1, nOut = 1) annotation(Placement(visible = true, transformation(origin = {0, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.PC P3(nIn = 1) annotation(Placement(visible = true, transformation(origin = {60, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.PC P4(nIn = 1) annotation(Placement(visible = true, transformation(origin = {60, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P1(nOut = 1, startMarks = 1) annotation(Placement(visible = true, transformation(origin = {-60, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P2(nOut = 2, startMarks = 1.5) annotation(Placement(visible = true, transformation(origin = {-60, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.IA IA1(testValue = 0) annotation(Placement(transformation(extent = {{-8, -2}, {8, 2}}, rotation = 90, origin = {-30, 0})));
+  ConPNlib.TC T1(nIn = 2, nOut = 1) annotation(Placement(visible = true, transformation(origin = {0, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.TC T2(nIn = 1, nOut = 1) annotation(Placement(visible = true, transformation(origin = {0, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P3(nIn = 1) annotation(Placement(visible = true, transformation(origin = {60, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P4(nIn = 1) annotation(Placement(visible = true, transformation(origin = {60, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 equation
   connect(IA1.inPlace, P2.outTransition[2]) annotation(Line(points={{-30,
           -7.24324},{-30,-7.24324},{-30,-39.5},{-50.7,-39.5}}));

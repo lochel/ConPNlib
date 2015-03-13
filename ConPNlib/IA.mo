@@ -6,7 +6,7 @@ model IA "Inhibitor Arc"
   // *** MODIFIABLE PARAMETERS AND VARIABLES END ***
   Interfaces.TransitionIn inPlace(active = outTransition.active, fire = outTransition.fire, arcWeight = 0, instSpeed = 0, prelimSpeed = 0, maxSpeed = 0)
     "connector for place"                                                                                                     annotation(Placement(visible = true, transformation(origin = {-67, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {-67, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Interfaces.PlaceOut outTransition(t = inPlace.t, minTokens = inPlace.minTokens, enable = inPlace.enable, decreasingFactor=inPlace.decreasingFactor, fed = inPlace.fed, arcType = PNlib.Types.ArcType.inhibitor_arc, testValue = testValue, speedSum = inPlace.speedSum)
+  Interfaces.PlaceOut outTransition(t = inPlace.t, minTokens = inPlace.minTokens, enable = inPlace.enable, decreasingFactor=inPlace.decreasingFactor, fed = inPlace.fed, arcType = ConPNlib.Types.ArcType.inhibitor_arc, testValue = testValue, speedSum = inPlace.speedSum)
     "connector for transition"                                                                                                     annotation(Placement(visible = true, transformation(origin = {67, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {67, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 equation
   // *** ERROR MESSENGES BEGIN ***

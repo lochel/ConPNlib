@@ -1,8 +1,8 @@
 within ConPNlib.Examples;
 model Test8
-  PNlib.PC P1(nOut = 2, startMarks = 1) annotation(Placement(visible = true, transformation(origin = {-30, -10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.PC P2(nIn = 1) annotation(Placement(visible = true, transformation(origin = {30, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.TC T1(nIn = 1, nOut = 1) annotation(Placement(visible = true, transformation(origin = {0, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P1(nOut = 2, startMarks = 1) annotation(Placement(visible = true, transformation(origin = {-30, -10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P2(nIn = 1) annotation(Placement(visible = true, transformation(origin = {30, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.TC T1(nIn = 1, nOut = 1) annotation(Placement(visible = true, transformation(origin = {0, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   TC T2(nIn = 1, nOut = 1) annotation(Placement(transformation(extent = {{-10, -40}, {10, -20}})));
   PC P3(nIn = 1, startMarks = 0.1) annotation(Placement(transformation(extent = {{20, -40}, {40, -20}})));
 equation

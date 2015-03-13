@@ -1,10 +1,10 @@
 within ConPNlib.Examples;
 model Test9
-  PNlib.PC P1(nOut = 1, startMarks = 1) annotation(Placement(visible = true, transformation(origin = {-40, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.TC T1(nIn = 1, nOut = 1, maximumSpeed = 0.5) annotation(Placement(visible = true, transformation(origin = {-20, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.PC P2(nIn = 1, nOut = 1) annotation(Placement(visible = true, transformation(origin = {0, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.TC T2(nIn = 1, nOut = 1, maximumSpeed = 1.0) annotation(Placement(visible = true, transformation(origin = {20, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  PNlib.PC P3(nIn = 1, startMarks = 0) annotation(Placement(visible = true, transformation(origin = {40, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P1(nOut = 1, startMarks = 1) annotation(Placement(visible = true, transformation(origin = {-40, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.TC T1(nIn = 1, nOut = 1, maximumSpeed = 0.5) annotation(Placement(visible = true, transformation(origin = {-20, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P2(nIn = 1, nOut = 1) annotation(Placement(visible = true, transformation(origin = {0, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.TC T2(nIn = 1, nOut = 1, maximumSpeed = 1.0) annotation(Placement(visible = true, transformation(origin = {20, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
+  ConPNlib.PC P3(nIn = 1, startMarks = 0) annotation(Placement(visible = true, transformation(origin = {40, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 equation
   connect(T2.outPlaces[1], P3.inTransition[1]) annotation(Line(points={{24.7,0},
           {30.7783,0},{30.7783,0},{30.7,0}}));

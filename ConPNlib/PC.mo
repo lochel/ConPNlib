@@ -10,7 +10,7 @@ model PC "Continuous Place"
   // *** MODIFIABLE PARAMETERS AND VARIABLES BEGIN ***
   parameter Real startMarks = 0 "start marks" annotation(Dialog(enable = true, group = "Marks"));
   parameter Real minMarks(min=0) = 0 "minimum capacity" annotation(Dialog(enable = true, group = "Marks"));
-  parameter Real maxMarks(min=minMarks) = PNlib.Constants.inf
+  parameter Real maxMarks(min=minMarks) = ConPNlib.Constants.inf
     "maximum capacity"                                                           annotation(Dialog(enable = true, group = "Marks"));
   // *** MODIFIABLE PARAMETERS AND VARIABLES END ***
 protected
@@ -66,7 +66,7 @@ protected
 public
   Interfaces.PlaceIn inTransition[nIn](each t = t_, each maxTokens = maxMarks, enable = activeIn, each emptied = emptying, decreasingFactor = decFactorIn, each speedSum = firingSumOut, fire = fireIn, active = activeIn, arcWeight = arcWeightIn, instSpeed = instSpeedIn, maxSpeed = maxSpeedIn, prelimSpeed = prelimSpeedIn, enabledByInPlaces = enabledByInPlaces)
     "connector for input transitions"                                                                                                     annotation(Placement(transformation(origin = {-93, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {-93, 0}, extent = {{-10, -10}, {10, 10}})));
-  Interfaces.PlaceOut outTransition[nOut](each t = t_, each minTokens = minMarks, enable = activeOut, each arcType = PNlib.Types.ArcType.normal_arc, each testValue = -1.0, each fed = feeding, decreasingFactor=decFactorOut, each speedSum = firingSumIn, fire = fireOut, active = activeOut, arcWeight = arcWeightOut, instSpeed = instSpeedOut, maxSpeed = maxSpeedOut, prelimSpeed = prelimSpeedOut)
+  Interfaces.PlaceOut outTransition[nOut](each t = t_, each minTokens = minMarks, enable = activeOut, each arcType = ConPNlib.Types.ArcType.normal_arc, each testValue = -1.0, each fed = feeding, decreasingFactor=decFactorOut, each speedSum = firingSumIn, fire = fireOut, active = activeOut, arcWeight = arcWeightOut, instSpeed = instSpeedOut, maxSpeed = maxSpeedOut, prelimSpeed = prelimSpeedOut)
     "connector for output transitions"                                                                                                     annotation(Placement(transformation(origin = {93, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {93, 0}, extent = {{-10, -10}, {10, 10}})));
   //initial equation
   //  fireIn = pre(fireIn);

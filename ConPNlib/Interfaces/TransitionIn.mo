@@ -6,7 +6,7 @@ connector TransitionIn
   input Boolean enable "Is the transition enabled by input places?" annotation(HideResult = true);
   input Real decreasingFactor
     "Factor of continuous input places for decreasing the speed"                           annotation(HideResult = true);
-  input PNlib.Types.ArcType arcType
+  input ConPNlib.Types.ArcType arcType
     "Type of output arcs ([1]normal, [2]test, [3]inhibition, or [4]read)"                                 annotation(HideResult = true);
   input Real testValue "Test value of a test or inhibitor arc" annotation(HideResult = true);
   input Boolean fed "Are the continuous input places fed?" annotation(HideResult = true);
