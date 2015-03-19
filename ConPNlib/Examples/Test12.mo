@@ -35,6 +35,5 @@ equation
       color={0,0,0},
       smooth=Smooth.None));
   annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-60,-40},
-            {60,40}}),         graphics), Icon(coordinateSystem(extent={{-60,-40},
-            {60,40}})));
+            {60,40}}), graphics));
 end Test12;

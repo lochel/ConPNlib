@@ -14,5 +14,5 @@ equation
           {-9.19811,0},{-9.19811,0},{-9.3,0}}));
   connect(P1.outTransition[1], T1.inPlaces[1]) annotation(Line(points={{-30.7,0},
           {-24.7642,0},{-24.7642,0},{-24.7,0}}));
-  annotation(experiment(StartTime = 0, StopTime = 3, Tolerance = 1e-006), Diagram(coordinateSystem(extent = {{-60, -20}, {60, 20}}, preserveAspectRatio = false, initialScale = 0.1, grid = {2, 2})), Icon(coordinateSystem(extent = {{-60, -20}, {60, 20}}, preserveAspectRatio = false, initialScale = 0.1, grid = {2, 2})));
+  annotation(experiment(StartTime = 0, StopTime = 3, Tolerance = 1e-006), Diagram(coordinateSystem(extent = {{-60, -20}, {60, 20}}, preserveAspectRatio = false, initialScale = 0.1, grid = {2, 2})));
 end Test9;

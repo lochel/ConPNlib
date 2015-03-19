@@ -10,5 +10,5 @@ equation
   connect(T2.outPlaces[1], P3.inTransition[1]) annotation(Line(points = {{4.7, -30}, {4.7, -30}, {20.7, -30}}));
   connect(P1.outTransition[1], T1.inPlaces[1]) annotation(Line(points = {{-20.7, -10.5}, {-12.354, -10.5}, {-12.354, 10}, {-4.7, 10}}));
   connect(P1.outTransition[2], T2.inPlaces[1]) annotation(Line(points = {{-20.7, -9.5}, {-12, -9.5}, {-12, -30}, {-4.7, -30}}, color = {0, 0, 0}, smooth = Smooth.None));
-  annotation(Diagram(coordinateSystem(extent = {{-60, -60}, {60, 40}}, preserveAspectRatio = false, initialScale = 0.1, grid = {2, 2}), graphics), Icon(coordinateSystem(extent = {{-40, -60}, {30, 40}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})), experiment(StartTime = 0, StopTime = 1, Tolerance = 1e-006));
+  annotation(Diagram(coordinateSystem(extent = {{-60, -60}, {60, 40}}, preserveAspectRatio = false, initialScale = 0.1, grid = {2, 2}), graphics), experiment(StartTime = 0, StopTime = 1, Tolerance = 1e-006));
 end Test8;

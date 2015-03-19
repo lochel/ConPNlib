@@ -16,5 +16,5 @@ equation
   connect(T2.outPlaces[1], P4.inTransition[1]) annotation(Line(points = {{4.7, -40}, {50.9434, -40}, {50.9434, -40}, {50.7, -40}}));
   connect(T1.outPlaces[1], P3.inTransition[1]) annotation(Line(points = {{4.7, 40}, {50.4717, 40}, {50.4717, 40}, {50.7, 40}}));
   connect(P1.outTransition[1], T1.inPlaces[1]) annotation(Line(points = {{-50.7, 40}, {-4.71698, 40}, {-4.71698, 39.5}, {-4.7, 39.5}}));
-  annotation(experiment(StartTime = 0, StopTime = 3, Tolerance = 1e-006), Diagram(coordinateSystem(extent = {{-80, -60}, {80, 60}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})), Icon(coordinateSystem(extent = {{-80, -60}, {80, 60}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})));
+  annotation(experiment(StartTime = 0, StopTime = 3, Tolerance = 1e-006), Diagram(coordinateSystem(extent = {{-80, -60}, {80, 60}}, preserveAspectRatio = true, initialScale = 0.1, grid = {2, 2})));
 end Test10;

@@ -37,6 +37,5 @@ equation
       color={0,0,0},
       smooth=Smooth.None));
   annotation(experiment(StartTime = 0, StopTime = 2, Tolerance = 1e-006), Diagram(coordinateSystem(extent={{-80,-20},
-            {80,20}},                                                                                                    preserveAspectRatio=false,   initialScale = 0.1, grid = {2, 2}),
-        graphics),                                                                                                    Icon(coordinateSystem(extent = {{-80, -20}, {80, 20}}, preserveAspectRatio = false, initialScale = 0.1, grid = {2, 2})));
+            {80,20}}, preserveAspectRatio=false, initialScale = 0.1, grid = {2, 2}), graphics));
 end Test11;
