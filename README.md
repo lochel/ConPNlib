@@ -8,6 +8,12 @@ The continuous Petri Net library, called ConPNlib, comprises
  * continuous transitions (TC), and
  * inhibitor arcs (IA).
 
+## Compatibility
+
+ * Works in OpenModelica 1.9.3
+   ![ConPNlib Coverage](https://test.openmodelica.org/libraries/history/ConPNlib-trend.svg)
+ * Works partly in Dymola 2015
+
 ## License
 
 This Modelica package is free software and the use is completely at your own risk;
