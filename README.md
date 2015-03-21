@@ -10,8 +10,7 @@ The continuous Petri Net library, called ConPNlib, comprises
 
 ## Compatibility
 
- * Works in OpenModelica 1.9.3
-   ![ConPNlib Coverage](https://test.openmodelica.org/libraries/history/ConPNlib-trend.svg)
+ * Works in OpenModelica 1.9.3 ([trend](https://test.openmodelica.org/libraries/history/ConPNlib-trend.svg), [coverage](https://test.openmodelica.org/libraries/ConPNlib/BuildModelRecursive.html))
  * Works partly in Dymola 2015
 
 ## License
