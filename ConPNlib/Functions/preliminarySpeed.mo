@@ -16,12 +16,12 @@ function preliminarySpeed
 algorithm
   prelimSpeed := maximumSpeed;
   for i in 1:nIn loop
-    if weaklyInputActiveVec[i] and speedSumIn[i] / arcWeightIn[i] < prelimSpeed then
+    if weaklyInputActiveVec[i] and speedSumIn[i] < prelimSpeed * arcWeightIn[i] then
       prelimSpeed := speedSumIn[i] / arcWeightIn[i];
     end if;
   end for;
   for i in 1:nOut loop
-    if weaklyOutputActiveVec[i] and speedSumOut[i] / arcWeightOut[i] < prelimSpeed then
+    if weaklyOutputActiveVec[i] and speedSumOut[i] < prelimSpeed * arcWeightOut[i] then
       prelimSpeed := speedSumOut[i] / arcWeightOut[i];
     end if;
   end for;
