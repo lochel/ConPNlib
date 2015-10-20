@@ -34,6 +34,6 @@ equation
       points={{14.7,20},{30.7,20}},
       color={0,0,0},
       smooth=Smooth.None));
-  annotation (Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-60,-40},
+  annotation (experiment(StartTime = 0, StopTime = 1, Tolerance = 1e-006), Diagram(coordinateSystem(preserveAspectRatio=false, extent={{-60,-40},
             {60,40}}), graphics));
 end Test12;
