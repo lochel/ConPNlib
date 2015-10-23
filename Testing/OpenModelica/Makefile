@@ -25,6 +25,7 @@ FAILINGTESTFILES = \
 # Add them here or they will be cleaned.
 DEPENDENCIES = \
 *.mos \
+*minimal.mat \
 Makefile \
 rtest \
 
