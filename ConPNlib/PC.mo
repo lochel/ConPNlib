@@ -13,9 +13,10 @@ model PC "Continuous Place"
   parameter Real maxMarks(min=minMarks) = ConPNlib.Constants.inf
     "maximum capacity"                                                           annotation(Dialog(enable = true, group = "Marks"));
   // *** MODIFIABLE PARAMETERS AND VARIABLES END ***
-  parameter Boolean showTokenFlow = false annotation(Dialog(enable = true, group = "Token flow"));
+  parameter Boolean showTokenFlow = settings.showTokenFlow annotation(Dialog(enable = true, group = "Token flow"));
   Blocks.tokenFlowCon tokenFlow(nIn=nIn, nOut=nOut, conFiringSumIn=firingSumIn, conFiringSumOut=firingSumOut, fireIn=fireIn, fireOut=fireOut, arcWeightIn=arcWeightIn, arcWeightOut=arcWeightOut, instSpeedIn=instSpeedIn, instSpeedOut=instSpeedOut) if showTokenFlow;
 protected
+  outer ConPNlib.Settings settings "global settings for animation and display";
   Real t_(start = startMarks, fixed = true) "marking";
   Real arcWeightIn[nIn] "weights of input arcs";
   Real arcWeightOut[nOut] "weights of output arcs";

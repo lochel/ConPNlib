@@ -1,5 +1,7 @@
 within ConPNlib.Examples;
 model Test12 "conflict"
+  inner Settings settings
+    annotation (Placement(transformation(extent={{48,28},{60,40}})));
 
   ConPNlib.TC T1(nOut=1)
     annotation (Placement(transformation(extent={{-60,-10},{-40,10}})));

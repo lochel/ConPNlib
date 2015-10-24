@@ -1,5 +1,7 @@
 within ConPNlib.Examples;
 model Test10
+  inner Settings settings
+    annotation (Placement(transformation(extent={{70,50},{80,60}})));
   ConPNlib.PC P1(nOut = 1, startMarks = 1) annotation(Placement(visible = true, transformation(origin = {-60, 40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ConPNlib.PC P2(nOut = 2, startMarks = 1.5) annotation(Placement(visible = true, transformation(origin = {-60, -40}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   ConPNlib.IA IA1(testValue = 0) annotation(Placement(transformation(extent = {{-8, -2}, {8, 2}}, rotation = 90, origin = {-30, 0})));

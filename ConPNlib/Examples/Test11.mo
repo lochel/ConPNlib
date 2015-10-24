@@ -1,5 +1,7 @@
 within ConPNlib.Examples;
 model Test11
+  inner Settings settings
+    annotation (Placement(transformation(extent={{72,12},{80,20}})));
   ConPNlib.PC 'P1'(nOut=1, startMarks=1.5) annotation (Placement(visible=true,
         transformation(
         origin={-60,0},
