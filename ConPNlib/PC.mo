@@ -1,10 +1,6 @@
 within ConPNlib;
 model PC "Continuous Place"
   Real t = if t_ < minMarks then minMarks else t_ "marking";
-  Real tInflowSum(fixed = true, start = 0.0);
-  Real tInflow[nIn](each fixed = true, each start = 0.0);
-  Real tOutflowSum(fixed = true, start = 0.0);
-  Real tOutflow[nOut](each fixed = true, each start = 0.0);
   parameter Integer nIn = 0 "number of input transitions" annotation(Dialog(connectorSizing = true));
   parameter Integer nOut = 0 "number of output transitions" annotation(Dialog(connectorSizing = true));
   // *** MODIFIABLE PARAMETERS AND VARIABLES BEGIN ***
@@ -76,16 +72,6 @@ public
   //  fireOut = pre(fireOut);
 equation
   // *** MAIN BEGIN ***
-  der(tInflowSum) = firingSumIn;
-  // der(tInflow) = arcWeightIn .* instSpeedIn;
-  for i in 1:nIn loop
-    der(tInflow[i]) = if pre(fireIn[i]) then arcWeightIn[i] * instSpeedIn[i] else 0.0;
-  end for;
-  der(tOutflowSum) = firingSumOut;
-  // der(tOutflow) = arcWeightOut .* instSpeedOut;
-  for i in 1:nOut loop
-    der(tOutflow[i]) = if pre(fireOut[i]) then arcWeightOut[i] * instSpeedOut[i] else 0.0;
-  end for;
   der(t_) = firingSumIn - firingSumOut "calculation of continuous mark change";
   // *** MAIN END ***
   // *** ERROR MESSENGES BEGIN ***
